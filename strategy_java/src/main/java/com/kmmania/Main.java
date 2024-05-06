@@ -9,20 +9,40 @@ public class Main {
         Context context = new Context();
         context.doTraining();
 
-        TrainingSession trainingSession1 = new TrainingSession(LocalDate.now(), "Afternoon", "Pershing");
-        context.setAthleticTraining(new SprintTraining(trainingSession1));
+        // Sprint training
+        TrainingSession sprintTraining = new TrainingSession(
+                LocalDate.now(),
+                "Morning",
+                "Insep"
+        );
+        context.setAthleticTraining(new SprintTraining(sprintTraining));
         context.doTraining();
 
-        TrainingSession trainingSession2 = new TrainingSession(LocalDate.now(), "Morning", "Stephane Diagana");
-        context.setAthleticTraining(new ThrowTraining(trainingSession2));
+        // Distance training
+        TrainingSession distanceTraining = new TrainingSession(
+                LocalDate.now(),
+                "Evening",
+                "Louis Lumiere"
+        );
+        context.setAthleticTraining(new DistanceTraining(distanceTraining));
         context.doTraining();
 
-        TrainingSession trainingSession3 = new TrainingSession(LocalDate.now(), "Evening", "Louis Lumiere");
-        context.setAthleticTraining(new DistanceTraining(trainingSession3));
+        // Jump training
+        TrainingSession jumpTraining = new TrainingSession(
+                LocalDate.now(),
+                "Evening",
+                "Alain Mimoun"
+        );
+        context.setAthleticTraining(new JumpTraining(jumpTraining));
         context.doTraining();
 
-        TrainingSession trainingSession4 = new TrainingSession(LocalDate.now(), "Evening", "Alain Mimoun");
-        context.setAthleticTraining(new JumpTraining(trainingSession4));
+        // Throw training
+        TrainingSession throwTraining = new TrainingSession(
+                LocalDate.now(),
+                "Afternoon",
+                "Pershing"
+        );
+        context.setAthleticTraining(new ThrowTraining(throwTraining));
         context.doTraining();
     }
 }

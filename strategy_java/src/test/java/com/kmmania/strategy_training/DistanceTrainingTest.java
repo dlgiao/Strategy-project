@@ -36,8 +36,8 @@ class DistanceTrainingTest {
         // Given
         TrainingSession trainingSessionMock = mock(TrainingSession.class);
         when(trainingSessionMock.date()).thenReturn(LocalDate.now());
-        when(trainingSessionMock.timeSlot()).thenReturn("Morning");
-        when(trainingSessionMock.place()).thenReturn("Pershing");
+        when(trainingSessionMock.timeSlot()).thenReturn("Evening");
+        when(trainingSessionMock.place()).thenReturn("Louis Lumiere");
 
         DistanceTraining distanceTraining = new DistanceTraining(trainingSessionMock);
 
@@ -47,13 +47,12 @@ class DistanceTrainingTest {
         // Then
         assertThat(getStandardOutContent()).contains("*** Distance training ***");
         assertThat(getStandardOutContent()).contains("Date: " + LocalDate.now());
-        assertThat(getStandardOutContent()).contains("Time slot: Morning");
-        assertThat(getStandardOutContent()).contains("Place: Pershing");
+        assertThat(getStandardOutContent()).contains("Time slot: Evening");
+        assertThat(getStandardOutContent()).contains("Place: Louis Lumiere");
     }
 
     // Utility method to capture System.out.println output
     private String getStandardOutContent() {
         return outContent.toString().trim();
     }
-
 }

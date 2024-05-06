@@ -4,9 +4,17 @@ import com.kmmania.strategy_training.*;
 
 import java.time.LocalDate;
 
+/**
+ * Main class to demonstrate the usage of different athletic training strategies.
+ * This class creates a Context instance and executes training sessions
+ * using various training strategies such as sprint, distance, jump, and throw.
+ */
 public class Main {
     public static void main(String[] args) {
+        // Create a context
         Context context = new Context();
+
+        // Execute default training session
         context.doTraining();
 
         // Sprint training

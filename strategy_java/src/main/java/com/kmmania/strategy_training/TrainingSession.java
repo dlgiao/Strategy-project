@@ -1,7 +1,7 @@
 package com.kmmania.strategy_training;
 
-import java.util.Date;
+import java.time.LocalDate;
 
-public record TrainingSession(Date date, String timeSlot, String place) {
+public record TrainingSession(LocalDate date, String timeSlot, String place) {
 }
 

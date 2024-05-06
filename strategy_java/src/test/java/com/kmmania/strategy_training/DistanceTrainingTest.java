@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.Date;
+import java.time.LocalDate;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.Mockito.mock;
@@ -35,7 +35,7 @@ class DistanceTrainingTest {
     void train_ShouldPrintDistanceTrainingMessage() {
         // Given
         TrainingSession trainingSessionMock = mock(TrainingSession.class);
-        when(trainingSessionMock.date()).thenReturn(new Date());
+        when(trainingSessionMock.date()).thenReturn(LocalDate.now());
         when(trainingSessionMock.timeSlot()).thenReturn("Morning");
         when(trainingSessionMock.place()).thenReturn("Pershing");
 
@@ -46,8 +46,8 @@ class DistanceTrainingTest {
 
         // Then
         assertThat(getStandardOutContent()).contains("*** Distance training ***");
-        assertThat(getStandardOutContent()).contains("Date: 2024-05-06");
-        assertThat(getStandardOutContent()).contains("Timeslot: Morning");
+        assertThat(getStandardOutContent()).contains("Date: " + LocalDate.now());
+        assertThat(getStandardOutContent()).contains("Time slot: Morning");
         assertThat(getStandardOutContent()).contains("Place: Pershing");
     }
 

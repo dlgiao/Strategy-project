@@ -8,6 +8,10 @@ The project showcases the Strategy Design Pattern, where different training stra
 classes implementing a common interface. It allows athletes to perform training sessions for different types of athletic
 events, such as sprinting, distance running, jumping, and throwing.
 
+## Project Structure
+
+The project is structured as follows:
+
 - **AthleticTraining**: Interface representing different athletic training strategies.
 - **Context**: Class providing a context for executing training sessions using different strategies.
 - **TrainingSession**: Class representing details of a training session including date, time slot, and place.
@@ -17,13 +21,6 @@ events, such as sprinting, distance running, jumping, and throwing.
 - **JumpTraining**: Implementation of the AthleticTraining interface for jump training.
 - **ThrowTraining**: Implementation of the AthleticTraining interface for throw training.
 - **Main**: Contains the `main` method to demonstrate the usage of different training strategies.
-
-## Project Structure
-
-The project is structured as follows:
-
-- `com.kmmania.strategy_training`: Contains the main implementation of the strategy pattern.
-- `com.kmmania`: Contains the Context class for executing training sessions and the Main class for demonstration.
 
 ## Usage
 

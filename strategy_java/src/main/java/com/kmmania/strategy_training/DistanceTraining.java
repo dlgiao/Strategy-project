@@ -4,6 +4,9 @@ package com.kmmania.strategy_training;
  * Implementation of the {@link AthleticTraining} interface representing
  * distance training strategy.
  * This class allows athletes to perform training sessions for distance events.
+ *
+ * @author Dac Linh Giao NGUYEN
+ * @version 0.1
  */
 public class DistanceTraining implements AthleticTraining {
     private final TrainingSession trainingSession;

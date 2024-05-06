@@ -7,6 +7,9 @@ import com.kmmania.strategy_training.DefaultTraining;
  * Context class for applying different athletic training strategies.
  * This class allows clients to set and switch between different training strategies
  * and execute training sessions accordingly.
+ *
+ * @author Dac Linh Giao NGUYEN
+ * @version 0.1
  */
 public class Context {
     private AthleticTraining athleticTraining = new DefaultTraining();

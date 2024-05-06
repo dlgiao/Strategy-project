@@ -10,8 +10,8 @@ public class ThrowTraining implements AthleticTraining {
     @Override
     public void train() {
         System.out.println("*** Throw training ***");
-        System.out.println("Date: " + this.trainingSession.date());
-        System.out.println("Time slot: " + this.trainingSession.timeSlot());
-        System.out.println("Place: " + this.trainingSession.place());
+        System.out.printf("Date: %s\n", this.trainingSession.date());
+        System.out.printf("Time slot: %s\n", this.trainingSession.timeSlot());
+        System.out.printf("Place: %s\n", this.trainingSession.place());
     }
 }

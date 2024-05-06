@@ -10,9 +10,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 class DistanceTrainingTest extends BaseTrainingTest {
-
     @Test
-    @DisplayName("train() method should print DistanceTraining message")
+    @DisplayName("train() method should print DistanceTraining content")
     void train_ShouldPrintDistanceTrainingMessage() {
         // Given
         TrainingSession trainingSessionMock = mock(TrainingSession.class);

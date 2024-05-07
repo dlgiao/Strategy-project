@@ -48,6 +48,17 @@ func (jt *JumpTraining) Train() {
 	fmt.Printf("Place: %s\n", jt.TrainingSession.Place)
 }
 
+type ThrowTraining struct {
+	TrainingSession TrainingSession
+}
+
+func (tt *ThrowTraining) Train() {
+	fmt.Println("*** Throw training ***")
+	fmt.Printf("Date: %s\n", tt.TrainingSession.Date)
+	fmt.Printf("Time slot: %s\n", tt.TrainingSession.TimeSlot)
+	fmt.Printf("Place: %s\n", tt.TrainingSession.Place)
+}
+
 type TrainingSession struct {
 	Date     time.Time
 	TimeSlot string

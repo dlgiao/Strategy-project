@@ -13,6 +13,7 @@ package com.kmmania.strategy_training
  * This class represents the default training strategy.
  *
  * @author Dac Linh Giao NGUYEN
+ * @constructor Constructs a new instance of DefaultTraining.
  * @since 0.1
  * @see AthleticTraining
  */

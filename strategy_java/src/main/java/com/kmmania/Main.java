@@ -20,40 +20,40 @@ public class Main {
         // Execute default training session
         context.doTraining();
 
-        // Sprint training
-        TrainingSession sprintTraining = new TrainingSession(
+        // Sprint session
+        TrainingSession sprintSession = new TrainingSession(
                 LocalDate.now(),
                 "Morning",
                 "Insep"
         );
-        context.setAthleticTraining(new SprintTraining(sprintTraining));
+        context.setAthleticTraining(new SprintTraining(sprintSession));
         context.doTraining();
 
-        // Distance training
-        TrainingSession distanceTraining = new TrainingSession(
+        // Distance session
+        TrainingSession distanceSession = new TrainingSession(
                 LocalDate.now(),
                 "Evening",
                 "Louis Lumiere"
         );
-        context.setAthleticTraining(new DistanceTraining(distanceTraining));
+        context.setAthleticTraining(new DistanceTraining(distanceSession));
         context.doTraining();
 
-        // Jump training
-        TrainingSession jumpTraining = new TrainingSession(
+        // Jump session
+        TrainingSession jumpSession = new TrainingSession(
                 LocalDate.now(),
                 "Evening",
                 "Alain Mimoun"
         );
-        context.setAthleticTraining(new JumpTraining(jumpTraining));
+        context.setAthleticTraining(new JumpTraining(jumpSession));
         context.doTraining();
 
-        // Throw training
-        TrainingSession throwTraining = new TrainingSession(
+        // Throw session
+        TrainingSession throwSession = new TrainingSession(
                 LocalDate.now(),
                 "Afternoon",
                 "Pershing"
         );
-        context.setAthleticTraining(new ThrowTraining(throwTraining));
+        context.setAthleticTraining(new ThrowTraining(throwSession));
         context.doTraining();
     }
 }

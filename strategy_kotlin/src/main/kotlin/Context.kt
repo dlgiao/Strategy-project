@@ -17,6 +17,7 @@ import com.kmmania.strategy_training.DefaultTraining
  * and execute training sessions accordingly.
  *
  * @author Dac Linh Giao NGUYEN
+ * @property athleticTraining The athletic training strategy to be set.
  * @constructor Sets the athletic training strategy to be used.
  * @param athleticTraining The athletic training strategy to be set.
  * @since 0.1

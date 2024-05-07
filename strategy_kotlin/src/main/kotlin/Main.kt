@@ -26,39 +26,39 @@ fun main() {
     // Execute default training session
     context.doTraining()
 
-    // Sprint training
-    val sprintTraining = TrainingSession(
+    // Sprint session
+    val sprintSession = TrainingSession(
         LocalDate.now(),
         "Morning",
         "Insep"
     )
-    context.athleticTraining = SprintTraining(sprintTraining)
+    context.athleticTraining = SprintTraining(sprintSession)
     context.doTraining()
 
-    // Distance training
-    val distanceTraining = TrainingSession(
+    // Distance session
+    val distanceSession = TrainingSession(
         LocalDate.now(),
         "Evening",
         "Louis Lumiere"
     )
-    context.athleticTraining = DistanceTraining(distanceTraining)
+    context.athleticTraining = DistanceTraining(distanceSession)
     context.doTraining()
 
-    // Jump training
-    val jumpTraining = TrainingSession(
+    // Jump session
+    val jumpSession = TrainingSession(
         LocalDate.now(),
         "Evening",
         "Alain Mimoun"
     )
-    context.athleticTraining = JumpTraining(jumpTraining)
+    context.athleticTraining = JumpTraining(jumpSession)
     context.doTraining()
 
-    // Throw training
-    val throwTraining = TrainingSession(
+    // Throw session
+    val throwSession = TrainingSession(
         LocalDate.now(),
         "Afternoon",
         "Pershing"
     )
-    context.athleticTraining = ThrowTraining(throwTraining)
+    context.athleticTraining = ThrowTraining(throwSession)
     context.doTraining()
 }

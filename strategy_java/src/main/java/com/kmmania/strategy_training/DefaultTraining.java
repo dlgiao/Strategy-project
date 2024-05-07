@@ -11,8 +11,7 @@ public class DefaultTraining implements AthleticTraining {
 
     /**
      * Method to perform the default training strategy.
-     * This method prints a message indicating that default training
-     * is being performed.
+     * This method prints a message indicating that default training is being performed.
      */
     @Override
     public void train() {

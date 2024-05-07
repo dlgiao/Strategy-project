@@ -1,9 +1,8 @@
 package com.kmmania.strategy_training;
 
 /**
- * Implementation of the {@link AthleticTraining} interface representing
- * throw training strategy.
- * This class allows athletes to perform training sessions for throwing events.
+ * Implementation of the {@link AthleticTraining} interface representing throw training strategy.
+ * This class allows training planification for throw sessions.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1

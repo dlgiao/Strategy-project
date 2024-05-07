@@ -1,9 +1,8 @@
 package com.kmmania.strategy_training;
 
 /**
- * Implementation of the {@link AthleticTraining} interface representing
- * sprint training strategy.
- * This class allows athletes to perform training sessions for sprint events.
+ * Implementation of the {@link AthleticTraining} interface representing sprint training strategy.
+ * This class allows training planification for sprint sessions.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1

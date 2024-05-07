@@ -1,9 +1,8 @@
 package com.kmmania.strategy_training;
 
 /**
- * Implementation of the {@link AthleticTraining} interface representing
- * jump training strategy.
- * This class allows athletes to perform training sessions for jump events.
+ * Implementation of the {@link AthleticTraining} interface representing jump training strategy.
+ * This class allows training planification for jump sessions.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1

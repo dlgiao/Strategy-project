@@ -36,8 +36,8 @@ class ContextTest {
     }
 
     @Test
-    @DisplayName("doTraining() should print training session message and delegate to AthleticTraining")
-    void doTraining_ShouldPrintTrainingSessionMessageAndDelegateToAthleticTraining() {
+    @DisplayName("doTraining() should print training session content and delegate to AthleticTraining")
+    void doTraining_ShouldPrintTrainingSessionContentAndDelegateToAthleticTraining() {
         // Given
         Context context = new Context();
         context.setAthleticTraining(athleticTrainingMock);

@@ -2,8 +2,7 @@ package com.kmmania.strategy_training;
 
 /**
  * Interface representing different athletic training strategies.
- * Implementations of this interface encapsulate various training methods
- * that can be applied to athletes.
+ * Implementations of this interface encapsulate various training sessions.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1

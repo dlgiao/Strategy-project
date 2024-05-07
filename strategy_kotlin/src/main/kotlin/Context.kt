@@ -4,7 +4,7 @@ import com.kmmania.strategy_training.AthleticTraining
 import com.kmmania.strategy_training.DefaultTraining
 
 class Context(
-    private val athleticTraining: AthleticTraining = DefaultTraining()
+    var athleticTraining: AthleticTraining = DefaultTraining()
 ) {
     fun doTraining() {
         println("=== Training session ===")

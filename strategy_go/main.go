@@ -10,7 +10,7 @@ func main() {
 	context.DoTraining()
 
 	sprintSession := strategy_training.TrainingSession{
-		Date:     time.Time{},
+		Date:     time.Now(),
 		TimeSlot: "Morning",
 		Place:    "Insep",
 	}
@@ -20,7 +20,7 @@ func main() {
 	context.DoTraining()
 
 	distanceSession := strategy_training.TrainingSession{
-		Date:     time.Time{},
+		Date:     time.Now(),
 		TimeSlot: "Evening",
 		Place:    "Louis Lumiere",
 	}
@@ -30,7 +30,7 @@ func main() {
 	context.DoTraining()
 
 	jumpSession := strategy_training.TrainingSession{
-		Date:     time.Time{},
+		Date:     time.Now(),
 		TimeSlot: "Evening",
 		Place:    "Alain Mimoun",
 	}
@@ -40,7 +40,7 @@ func main() {
 	context.DoTraining()
 
 	throwSession := strategy_training.TrainingSession{
-		Date:     time.Time{},
+		Date:     time.Now(),
 		TimeSlot: "Afternoon",
 		Place:    "Pershing",
 	}

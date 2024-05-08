@@ -89,3 +89,26 @@ func TestJumpTraining_Train(t *testing.T) {
 		"Place: Alain Mimoun\n"
 	assert.Equal(t, expectedOutput, output, "Expected output %s, but got %s", expectedOutput, output)
 }
+
+func TestThrowTraining_Train(t *testing.T) {
+	// Given
+	throwTraining := ThrowTraining{
+		TrainingSession: TrainingSession{
+			Date:     time.Date(2024, 5, 5, 0, 0, 0, 0, time.UTC), // Utilisez une date fixe pour le test
+			TimeSlot: "Afternoon",
+			Place:    "Pershing",
+		},
+	}
+
+	// When
+	output := utils.CaptureOutput(func() {
+		throwTraining.Train()
+	})
+
+	// Then
+	expectedOutput := "*** Throw training ***\n" +
+		"Date: 2024-05-05\n" +
+		"Time slot: Afternoon\n" +
+		"Place: Pershing\n"
+	assert.Equal(t, expectedOutput, output, "Expected output %s, but got %s", expectedOutput, output)
+}

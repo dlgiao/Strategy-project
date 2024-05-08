@@ -21,7 +21,7 @@ type SprintTraining struct {
 
 func (st *SprintTraining) Train() {
 	fmt.Println("*** Sprint training ***")
-	fmt.Printf("Date: %s\n", st.TrainingSession.Date)
+	fmt.Printf("Date: %s\n", st.TrainingSession.Date.Format("2006-01-01"))
 	fmt.Printf("Time slot: %s\n", st.TrainingSession.TimeSlot)
 	fmt.Printf("Place: %s\n", st.TrainingSession.Place)
 }
@@ -32,7 +32,7 @@ type DistanceTraining struct {
 
 func (dt *DistanceTraining) Train() {
 	fmt.Println("*** Distance training ***")
-	fmt.Printf("Date: %s\n", dt.TrainingSession.Date)
+	fmt.Printf("Date: %s\n", dt.TrainingSession.Date.Format("2006-01-01"))
 	fmt.Printf("Time slot: %s\n", dt.TrainingSession.TimeSlot)
 	fmt.Printf("Place: %s\n", dt.TrainingSession.Place)
 }
@@ -43,7 +43,7 @@ type JumpTraining struct {
 
 func (jt *JumpTraining) Train() {
 	fmt.Println("*** Jump training ***")
-	fmt.Printf("Date: %s\n", jt.TrainingSession.Date)
+	fmt.Printf("Date: %s\n", jt.TrainingSession.Date.Format("2006-01-01"))
 	fmt.Printf("Time slot: %s\n", jt.TrainingSession.TimeSlot)
 	fmt.Printf("Place: %s\n", jt.TrainingSession.Place)
 }
@@ -54,7 +54,7 @@ type ThrowTraining struct {
 
 func (tt *ThrowTraining) Train() {
 	fmt.Println("*** Throw training ***")
-	fmt.Printf("Date: %s\n", tt.TrainingSession.Date)
+	fmt.Printf("Date: %s\n", tt.TrainingSession.Date.Format("2006-01-01"))
 	fmt.Printf("Time slot: %s\n", tt.TrainingSession.TimeSlot)
 	fmt.Printf("Place: %s\n", tt.TrainingSession.Place)
 }

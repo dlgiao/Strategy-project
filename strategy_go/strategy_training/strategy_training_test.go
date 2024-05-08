@@ -38,7 +38,7 @@ func TestSprintTraining_Train(t *testing.T) {
 
 	// Then
 	expectedOutput := "*** Sprint training ***\n" +
-		"Date: 2024-05-05\n" + // Utilisez une date fixe pour l'attente
+		"Date: 2024-05-05\n" +
 		"Time slot: Morning\n" +
 		"Place: Insep\n"
 	assert.Equal(t, expectedOutput, output, "Expected output %s, but got %s", expectedOutput, output)
@@ -61,8 +61,31 @@ func TestDistanceTraining_Train(t *testing.T) {
 
 	// Then
 	expectedOutput := "*** Distance training ***\n" +
-		"Date: 2024-05-05\n" + // Utilisez une date fixe pour l'attente
+		"Date: 2024-05-05\n" +
 		"Time slot: Evening\n" +
 		"Place: Louis Lumiere\n"
+	assert.Equal(t, expectedOutput, output, "Expected output %s, but got %s", expectedOutput, output)
+}
+
+func TestJumpTraining_Train(t *testing.T) {
+	// Given
+	jumpTraining := JumpTraining{
+		TrainingSession: TrainingSession{
+			Date:     time.Date(2024, 5, 5, 0, 0, 0, 0, time.UTC), // Utilisez une date fixe pour le test
+			TimeSlot: "Evening",
+			Place:    "Alain Mimoun",
+		},
+	}
+
+	// When
+	output := utils.CaptureOutput(func() {
+		jumpTraining.Train()
+	})
+
+	// Then
+	expectedOutput := "*** Jump training ***\n" +
+		"Date: 2024-05-05\n" +
+		"Time slot: Evening\n" +
+		"Place: Alain Mimoun\n"
 	assert.Equal(t, expectedOutput, output, "Expected output %s, but got %s", expectedOutput, output)
 }

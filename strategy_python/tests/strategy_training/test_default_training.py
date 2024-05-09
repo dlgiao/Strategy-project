@@ -14,4 +14,6 @@ class TestDefaultTraining:
     def test_train(self, capsys):
         self.default_training.train()
         captured = capsys.readouterr()
-        assert captured.out == "*** Default training ***\n...\n"
+        assert captured.out == """*** Default training ***
+...
+"""

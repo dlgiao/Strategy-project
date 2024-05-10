@@ -7,6 +7,6 @@ class DistanceTraining(AthleticTraining):
 
     def train(self):
         print("*** Distance training ***")
-        print("Date: {}".format(self.training_session.date))
-        print("Time slot: {}".format(self.training_session.time_slot))
-        print("Place: {}".format(self.training_session.place))
+        print(f"Date: {self.training_session.date}")
+        print(f"Time slot: {self.training_session.time_slot}")
+        print(f"Place: {self.training_session.place}")

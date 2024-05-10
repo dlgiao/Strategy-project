@@ -15,6 +15,7 @@ class TestJumpTraining:
 
     def teardown_method(self, method):
         print(f"Tearing down {method}")
+        del self.training_session_mock
         del self.jump_training
 
     def test_train(self, capsys):

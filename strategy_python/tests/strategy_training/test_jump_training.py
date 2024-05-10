@@ -15,6 +15,7 @@ class TestJumpTraining:
 
     def teardown_method(self, method):
         print(f"Tearing down {method}")
+        del self.jump_training
 
     def test_train(self, capsys):
         self.jump_training.train()

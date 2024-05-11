@@ -51,6 +51,14 @@ Maven, simply run:
 mvn test
 ```
 
+## Generate Javadoc
+
+Use the following Maven command to generate Javadoc
+
+```bash
+mvn javadoc:javadoc
+```
+
 ## Building and Running with Docker
 
 The project includes a Dockerfile for containerization. To build an image and run the project within a container,
